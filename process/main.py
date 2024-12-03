@@ -10,12 +10,10 @@ from process.database.config import DataBasePaths
 from process.face_processing.face_signup import FaceSignUp
 from process.face_processing.face_login import FaceLogIn
 
-
 class CustomFrame(tk.Frame):
     def __init__(self, master=None, **kwargs):
         super().__init__(master, **kwargs)
         self.pack(fill=tk.BOTH, expand=True)
-
 
 class GraphicalUserInterface:
     def __init__(self, root):
@@ -204,7 +202,7 @@ class GraphicalUserInterface:
         register_button = Button(self.signup_window, image=register_button_img, height="40", width="200",
                                  command=self.data_sign_up)
         register_button.image = register_button_img
-        register_button.place(x=588, y=540)
+        register_button.place(x=588, y=500)
 
     def main(self):
         # background
